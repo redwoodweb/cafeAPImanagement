@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+}
+ul,
+ol {
+  list-style: none;
+}
+ul li {
+  p {
+    display: inline-block;
+  }
+}
+
+#auth-wrap {
+  background-color: var(-bs-primary);
+  .container-sm {
+    .row {
+      height: 100vh;
+      .card-header {
+        font-size: 1.5rem;
+      }
+      .card-body {
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .card-title {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+#pddata {
+  th,
+  td {
+    height: 50px;
+    vertical-align: middle;
+    img {
+      height: 100%;
+    }
+  }
+}
