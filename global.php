@@ -14,8 +14,8 @@ foreach( $row as $key => $val ){
 }
 
 // 고정정보들
-$client_id = 'Rve3WU4LS6pVf2iCfiMfUw';// 클라이어트 id
-$base64_encode = 'UnZlM1dVNExTNnBWZjJpQ2ZpTWZVdzowOVVvMHlsRlB0MWpoU0xYVzg3V1ZB';// 클라이언트 id + 시크릿 id base64 코드로 인코딩
+$client_id = '';// 클라이어트 id
+$base64_encode = '';// 클라이언트 id + 시크릿 id base64 코드로 인코딩
 $redirect_uri = 'https://wizard99v.cafe24.com/cafe24apitest/auth.html'; // 설정된 리다이렉트 주소 
 $conn->close();
 ?>

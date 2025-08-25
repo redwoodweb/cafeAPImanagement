@@ -5,13 +5,13 @@ header("Access-Control-Allow-Origin: https://ecudemo339998.cafe24.com/");
 header("Content-Type: application/json");
 $curl = curl_init();
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://ecudemo339998.cafe24api.com/api/v2/admin/products/count',
+  CURLOPT_URL => 'https://ecudemo366466.cafe24api.com/api/v2/admin/products/count',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_CUSTOMREQUEST => 'GET',
   CURLOPT_HTTPHEADER => array(
     'Authorization: Bearer '.$access_token,
     'Content-Type: application/json',
-    'X-Cafe24-Api-Version: 2024-06-01'
+    // 'X-Cafe24-Api-Version: 2025-06-01'
   ),
 ));
 $response = curl_exec($curl);

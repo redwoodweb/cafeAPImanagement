@@ -9,13 +9,13 @@ $data = http_build_query(array(// application/x-www-form-urlencoded type
 
 $curl = curl_init();
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://ecudemo339998.cafe24api.com/api/v2/oauth/token',
+  CURLOPT_URL => 'https://ecudemo366466.cafe24api.com/api/v2/oauth/token',
   CURLOPT_POSTFIELDS => $data,
   CURLOPT_HTTPHEADER => array(
     'Access-Control-Allow-Origin: '.$origin_uri,
     'Authorization: Bearer '.$base64_encode,
     'Content-Type: application/x-www-form-urlencoded',
-    'X-Cafe24-Api-Version: 2024-06-01'
+    // 'X-Cafe24-Api-Version: 2025-06-01'
   ),
   CURLOPT_RETURNTRANSFER => true // 이 옵션을 추가하여 반환 값을 문자열로 받음
 ));

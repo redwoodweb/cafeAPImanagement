@@ -25,6 +25,8 @@ async function fetchProductData() {
 
     //   data 항목에 맞게 정렬하여 가져오기 순서: 이미지, 상품명, 가격
     let dataList = [];
+    console.log(data);
+
     data.products.forEach((el, i) => {
       let arrayList = [];
       for (let key in el) {
@@ -76,7 +78,7 @@ document.querySelector('#pddata').addEventListener('click', function (e) {
     );
     if (check) {
       console.log('삭제');
-      document.location.href = `./delpd.php?pd_no=${pdNo}`;
+      //   document.location.href = `./delpd.php?pd_no=${pdNo}`;
     } else {
       console.log('삭제 하지않음' + pdNo);
     }
